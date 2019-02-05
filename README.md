@@ -1,5 +1,7 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+This project shows how to send props down then up the component tree. Enter a C or F temperature. Whichever unit is entered the other will calculate and display. A message will indicate if the temperature entered will boil water.
+
 ## Available Scripts
 
 In the project directory, you can run:
