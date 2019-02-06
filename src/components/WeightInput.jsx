@@ -1,4 +1,4 @@
-// src/components/TemperatureInput.jsx
+// src/components/WeightInput.jsx
 
 import React, { Component } from 'react'
 
@@ -6,24 +6,22 @@ import Paper from '@material-ui/core/Paper'
 
 import { unitNames } from '../utilities/Utilities'
 
-export default class TemperatureInput extends Component {
+export default class WeightInput extends Component {
   constructor (props) {
     super(props)
     this.handleChange = this.handleChange.bind(this)
   }
 
   handleChange (e) {
-    this.props.onTemperatureChange(e.target.value)
+    this.props.onWeightChange(e.target.value)
   }
 
   render () {
-    // console.log('this.props in TemperatureInput ===>', this.props)
+    // console.log('this.props in WeightInput ===>', this.props)
     return (
-      <Paper className='TemperatureInput'>
+      <Paper className='WeightInput'>
         <fieldset>
-          <legend>
-            Enter temperature in {unitNames.temperature[this.props.unit]}:
-          </legend>
+          <legend>Enter weight in {unitNames.weight[this.props.unit]}:</legend>
           <input value={this.props.measure} onChange={this.handleChange} />
         </fieldset>
       </Paper>
